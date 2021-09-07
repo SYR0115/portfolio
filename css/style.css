@@ -61,7 +61,12 @@ body {
   line-height: 1.5;
   color: #646464;
   text-align: left;
-  background-color: #f7f7f7; /**背景色右 #F2F2F2**/
+
+  /* background-image: url("water.jpg"); The image used */
+  background-color: #f7f7f7; /**背景色右 #F2F2F2**/ /* Used if the image is unavailable */
+  /* height: 50%; /* You must set a specified height */
+  /* background-position: center; /* Center the image */
+  /* background-repeat: repeat; /* Do not repeat the image */
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
