@@ -519,8 +519,6 @@
             polygonTemplate.tooltipText = "{name}";
             polygonTemplate.polygon.fillOpacity = 0.6;
             
-            
-            
             // Create hover state and set alternative fill color
             var hs = polygonTemplate.states.create("hover");
             hs.properties.fill = chart.colors.next();
@@ -555,8 +553,7 @@
             }
             
             var colorSet = new am4core.ColorSet();
-            colorSet.next().hex // -> "#67b7dc" - from default scheme
-            colorSet.next().hex // -> "#6794dc" - from default scheme
+
             colorSet.list = [
                             am4core.color('#8B4513'),
                             am4core.color('#A0522D'),
@@ -616,9 +613,7 @@
                             am4core.color('#FF8C00'),
                             am4core.color('#F4A460'),
                             am4core.color('#CD853F')
-                        ];
-            colorSet.next().hex // -> "#a367dc" - third color from NEW list
-         
+                        ];         
 
             imageSeries.data = [ {
             "title": "Brussels",
