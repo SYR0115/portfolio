@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Smooth scrolling to section
+    /* Smooth scrolling to section
     $(".btn-scroll").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -11,7 +11,24 @@
             }, 1500, 'easeInOutExpo');
         }
     });
-
+    */
+    
+    // Smooth scrolling on the navbar links
+    $(".navbar-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 30
+            }, 1500, 'easeInOutExpo');
+            
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .active').removeClass('active');
+                $(this).closest('a').addClass('active');
+            }
+        }
+    });
+   
     
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {

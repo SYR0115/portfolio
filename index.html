@@ -156,12 +156,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="sidebar-content">
+                        <nav class="row navbar navbar-expand-md mt-3">
+                            <div class="col-12 text-center mb-2 collapse navbar-collapse" id="navbarCollapse">
+                                <ul class="nav navbar-nav">
+                                    <style type="text/css">
+                                        li{
+                                            margin-left: 0.3rem;
+                                        }
+                                    </style>
+                                    <li class="nav-item">
+                                        <a class="botton nav-link"href="#Expericence" mr-1>#The Experience</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="botton nav-link" href="#Education">#The Education</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="botton nav-link" href="#Review">#Customer Review</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="botton nav-link" href="#Portfolio">#The Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="botton nav-link" href="#Traveler">#The Traveler</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
             <!-- Bonjour End -->      
 
             <!-- Experience Start -->
-            <div class="content mb-n4">  
+            <div class="content mb-n4" id="Expericence">  
                 <div class="container bg-white py-5">
                     <div class="row px-3">
                         <div class="col-12">
@@ -200,7 +228,7 @@
             <!-- Experience End -->
 
             <!-- Education Start -->
-            <div class="content mb-n4">
+            <div class="content mb-n4" id="Education">
                 <div class="container bg-white py-5">
                     <div class="row px-3">
                         <div class="col-12">
@@ -255,7 +283,7 @@
             <!-- Education End -->
 
             <!-- Portfolio Start -->
-            <div class="content mb-n4">  
+            <div class="content mb-n4" id="Portfolio">  
                 <div class="container bg-white pt-5 pb-3">
                     <div class="row px-3">
                         <div class="col-12">
@@ -323,9 +351,9 @@
                                     <div class="position-relative overflow-hidden mb-2">
                                         <img class="img-fluid w-100" src="img/ar1.jpg" alt="">
                                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/art1.jpg" data-lightbox="Art">
+                                            <a href="img/ar1.jpg" data-lightbox="Art">
                                                 <i class="fa fa-4x fa-plus text-white"></i></a>
-                                            <a href="img/art2.jpg" data-lightbox="Art"></a>
+                                            <a href="img/ar2.jpg" data-lightbox="Art"></a>
                                             <a href="img/art3.jpg" data-lightbox="Art"></a>
                                             <a href="img/art0.jpg" data-lightbox="Art"></a>
                                             <a href="img/art10.jpg" data-lightbox="Art"></a>
@@ -347,7 +375,7 @@
             <!-- Portfolio End -->
 
             <!-- Review Start -->
-            <div class="content mb-n4"> 
+            <div class="content mb-n4" id="Review"> 
                 <div class="container bg-white py-5">
                     <div class="row px-3">
                         <div class="col-12">
@@ -407,7 +435,7 @@
             <!-- Review End -->
             
             <!-- Travel Start -->
-            <div class="content mb-n4"> 
+            <div class="content mb-n4" id="Traveler"> 
                 <div class="container bg-white py-5">
                     <div class="row px-3">
                         <div class="col-12">
@@ -527,7 +555,70 @@
             }
             
             var colorSet = new am4core.ColorSet();
-
+            colorSet.next().hex // -> "#67b7dc" - from default scheme
+            colorSet.next().hex // -> "#6794dc" - from default scheme
+            colorSet.list = [
+                            am4core.color('#8B4513'),
+                            am4core.color('#A0522D'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#CD853F'),
+                            am4core.color('#D2B48C'),
+                            am4core.color('#A0522D'),
+                            am4core.color('#D2691E'),
+                            am4core.color('#CD5C5C'),
+                            am4core.color('#BC8F8F'),
+                            am4core.color('#F08080'),
+                            am4core.color('#FA8072'),
+                            am4core.color('#FFA07A'),
+                            am4core.color('#FF6347'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#D2691E'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#CD853F'),
+                            am4core.color('#D2B48C'),
+                            am4core.color('#A0522D'),
+                            am4core.color('#D2691E'),
+                            am4core.color('#CD5C5C'),
+                            am4core.color('#BC8F8F'),
+                            am4core.color('#F08080'),
+                            am4core.color('#FA8072'),
+                            am4core.color('#FFA07A'),
+                            am4core.color('#FF6347'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#CD5C5C'),
+                            am4core.color('#BC8F8F'),
+                            am4core.color('#F08080'),
+                            am4core.color('#FA8072'),
+                            am4core.color('#FFA07A'),
+                            am4core.color('#FF6347'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#CD853F'),
+                            am4core.color('#D2B48C'),
+                            am4core.color('#A0522D'),
+                            am4core.color('#D2691E'),
+                            am4core.color('#CD5C5C'),
+                            am4core.color('#BC8F8F'),
+                            am4core.color('#F08080'),
+                            am4core.color('#FA8072'),
+                            am4core.color('#FFA07A'),
+                            am4core.color('#FF6347'),
+                            am4core.color('#FF7F50'),
+                            am4core.color('#FF8C00'),
+                            am4core.color('#F4A460'),
+                            am4core.color('#CD853F')
+                        ];
+            colorSet.next().hex // -> "#a367dc" - third color from NEW list
+         
 
             imageSeries.data = [ {
             "title": "Brussels",
@@ -546,9 +637,9 @@
             "longitude":-117,
             "color":colorSet.next()
             } ,{
-            "title": "Disney",
+            "title": "Disney, California",
             "latitude":33.81,
-            "longitude":-117.3,
+            "longitude":-116.8,
             "color":colorSet.next()
             } ,{    
             "title": "Salzburg",
